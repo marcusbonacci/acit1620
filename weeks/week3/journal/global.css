@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 252, 249);
+    margin-inline: 20rem;
+}
+
+h1, h2, h3 {
+    font-family: sans-serif;
+    padding-block: .5rem;
+}
+
+p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+hr {
+    margin-block: 1rem;
+}
+
+ul {
+    /* margin-block: .5rem; */
+    padding-left: 1rem;
+}
+
+footer {
+    margin-top: 2rem;
+}
