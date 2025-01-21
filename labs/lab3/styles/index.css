@@ -1,7 +1,3 @@
-.content {
-    
-}
-
 #table-of-contents {
     position: fixed;
 }
@@ -38,10 +34,6 @@
 .contact a:hover {
     color: var(--secondary-color);
     transition: .2s ease;
-}
-
-.container {
-    /* padding-block: 1rem; */
 }
 
 #projects ul li {
