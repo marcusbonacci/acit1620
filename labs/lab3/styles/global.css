@@ -1,0 +1,90 @@
+@property --primary-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #5B9279;
+}
+
+@property --secondary-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #50c2ff;
+}
+
+@property --background-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #252725;
+}
+
+@property --text-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #ffffff;
+}
+
+@property --border-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #baffe06c;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+a {
+    color: #baffe0;
+}
+
+hr {
+    color: var(--text-color);
+}
+
+section {
+    border-bottom: 1px solid var(--border-color);
+    padding-block: 1rem;
+}
+
+/* Utility classes */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.pagewrap {
+    margin-inline: 10rem;
+}
+
+nav {
+    display: flex;;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    transition: .3s ease;
+}
+
+footer {
+    padding-block: 1rem;
+    display: flex;
+    justify-content: center;
+}

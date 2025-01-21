@@ -1,0 +1,55 @@
+.content {
+    
+}
+
+#table-of-contents {
+    position: fixed;
+}
+
+#table-of-contents p {
+
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+    font-size: large;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#table-of-contents li {
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+.content.grid {
+    grid-template-columns: 1fr 5fr;
+    align-items: start;
+}
+
+.contact {
+    font-size: larger;
+}
+
+.contact li {
+    list-style: circle;
+    margin-left: 2rem;
+    padding-top: .5rem;
+}
+
+.contact a:hover {
+    color: var(--secondary-color);
+    transition: .2s ease;
+}
+
+.container {
+    /* padding-block: 1rem; */
+}
+
+#projects ul li {
+    list-style: disc;
+    margin-inline: 1rem;
+}
+
+#skills ul li {
+    list-style: disc;
+    margin-inline: 1rem;
+}
