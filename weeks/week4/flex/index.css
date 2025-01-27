@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex: 1;
+    max-width: 200px;
+    min-width: 100px;
+    /* background-color: orange; */
+    padding: .25rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.flex-item:nth-child(even) {
+    background-color: lightskyblue;
+}
+
+.flex-item:nth-child(odd) {
+    background-color: orange;
+}
