@@ -1,0 +1,197 @@
+@property --primary-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #2ebd99;
+}
+
+@property --accent-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #448676;
+}
+
+@property --text-color-1 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #fff;
+}
+
+@property --text-color-2 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #080456;
+}
+
+/* General Styles: Applies to the whole page */
+/*
+The body tag should have the following styles
+## The font family should be Arial and sans-serif
+## Margin and padding should be set to
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles: A fixed section at the top */
+/*
+The header class should include the following styles
+## Set the background color to any color of your choice
+## Set the text colour to any color of your choice
+## Set a padding value for the header
+## Align the header text to center
+## Include a bottom border for the header with a colour of your choice
+*/
+
+.header {
+    background-color: var(--primary-color);
+    color: var(--text-color-1);
+    padding: .5rem;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+/* Header font size increased */
+/*Increase the font size of h1 in the header class to 2.5 em and set the 
+margin to 0
+*/
+
+.header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Navigation Bar */
+/*
+The navbar class should include the following styles
+## The display of the navbar should be set to flex
+## The content should be justified to the center 
+(Hint: Use the property justify-content)
+## Add a background color of your choice
+## Add a padding around the text (Ex: 20px)
+*/
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #393939;
+    padding: 10px;
+}
+
+/* Navigation bar hover effect added */
+.nav-item {
+    color: white;
+    margin: 0 15px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* Background color on hover */
+/* The following styles should be applied on hovering any nav-item
+(Hint: use the nav-item class)
+## Select a font color of your choice for all the nav items
+## Background color should be applied to the nav-items
+## Padding should be applied with appropriate values
+## Set a border radius (Ex: 5px)
+*/
+
+.nav-item:hover {
+    color: var(--accent-color-2);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Flexbox Layout */
+/* The flex-container class should include the following styles
+## The display should be set as flex
+## gap(20px) and margin(20px 0)
+*/
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Increased padding for articles */
+.article {
+    flex: 1 1 300px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Image Card */
+/* For the Image card class, include the following styles
+## The text should be aligned to center 
+## Apply a border style with a border radius
+## set the padding
+## set the background color to anything of your choice
+## Set a box shadow for the image (use appropriate values)
+*/
+.image-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    flex: 1 1 150px;
+}
+
+/* Enlarged images inside image cards */
+.image-card img {
+    max-width: 120%;
+    border-radius: 8px;
+}
+
+/* Highlight class */
+
+.highlight {
+    color: #080456;
+    font-weight: bold;
+}
+
+/*
+The highlight class in the footer class should be set to a font colour of your
+choice and the font(for the highlighted text) should appear in bold
+*/
+
+
+/* Footer Styles */
+.footer {
+    font-family: monospace;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer .highlight {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Reduced font size for footer text */
+/*
+
+Reduce the footer font size so that it is smaller than the parent font size.
+*/
+.footer {
+    font-size: small;
+}

@@ -1,0 +1,24 @@
+.translate {
+    width: 150px;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+    transition: transform .1s ease;
+}
+
+.translate:hover {
+    transform: translate(50px, 30px);
+}
+
+.rotate {
+    width: 150px;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: coral;
+    text-align: center;
+    transition: transform .1s ease;
+}
+
+.rotate:hover {
+    transform: rotate(15deg)
+}

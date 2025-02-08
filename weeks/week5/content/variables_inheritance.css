@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  color: black;
+  font-family: sans-serif;
+  width: 75%;
+  height: 80%;
+  margin: 4px;
+  border: 2px black solid;
+}
+
+p {
+margin: 0;
+}
+
+.one {
+height: 250px;
+}
+
+.two {
+height: 80%;
+}
+
+.three {
+height: 40%;
+}
+
+.four {
+height: 40%;
+}
