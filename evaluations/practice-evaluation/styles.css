@@ -1,0 +1,105 @@
+@property --primary-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #10776e;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form button {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: hsl(120, 56%, 40%);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    width: 5rem;
+    margin-left: auto;
+}
+
+/* Classes */
+.page-container {
+
+}
+
+.page-container div {
+    display: flex;
+    gap: 1rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+aside {
+    /* display: flex; */
+    text-align: right;
+}
+
+aside li {
+    list-style-type: none;
+    padding-block: .5rem;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+li a:hover {
+    color: #ff0000;
+}
+
+main {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+img {
+    width: 200px;
+    padding-inline: 1rem;
+    display: inline;
+    float: left;
+}
+
+p {
+    display: inline;
+}
+
+footer {
+    color: #fff;
+    background-color: var(--primary-color);
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    aside {
+        display: box;
+    }
+}

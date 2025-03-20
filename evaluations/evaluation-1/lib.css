@@ -1,0 +1,13 @@
+/*
+    DO NOT MODIFY THIS FILE - place all of your styles into the provided index.css file
+*/
+body {
+    font-family: 'Nunito Sans';
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+.overlay {
+    font-family: 'DM Sans';
+}

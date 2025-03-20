@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@property --gray-900 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #1b1b1c;
+}
+
+* {
+    font-family: "Roboto", "sans-serif";
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+
+.page-container {
+    padding-inline: 1rem;
+}
+
+/* Sections */
+
+/* Header */
+.header {
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.header nav {
+
+}
+
+.header ul {
+    gap: 1rem;
+}
+
+.header ul li {
+    display: flex;
+    align-items: center;
+}
+
+.header .profile {
+    background-color: rgb(255, 255, 255);
+    border: rgba(0, 0, 0, .1) solid 1px;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+/* Main */
+.main {
+    height: 600px;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--gray-900);
+    border-radius: 4px;
+    color: white;
+    padding-inline: .5rem;
+}
+
+.sidebar h2 {
+    font-weight: 500;
+    font-size: larger;
+}
+
+/* Content */
+.content {
+    justify-content: center;
+}
+
+.page {
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+    height: 750px;
+    width: 700px;
+    margin: auto;
+}
+
+/* Utility */
+.grid {
+    display: grid;
+    grid-template-columns: .2fr .8fr;
+    gap: .5rem;
+}
+
+.flex {
+    display: flex;
+}

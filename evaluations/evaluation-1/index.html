@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACIT 1620 - Evaluation 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="menubar">
+            <!--
+
+                Add an unordered list with 5 list items, containing the following (exactly as written) text:
+                
+                Learning Hub
+                MyBCIT
+                Students
+                Staff
+                Events
+
+            -->
+            <ul>
+                <li>Learning Hub</li>
+                <li>MyBCIT</li>
+                <li>Students</li>
+                <li>Staff</li>
+                <li>Events</li>
+            </ul>
+
+        </div>
+        <div class="header">
+            <!-- 
+
+                Add a h1 with class 'logo'
+                
+                Inside the h1, add an image tag that loads the logo.svg file inside the images folder
+
+            -->
+            <h1 class="logo">
+                <img src="/images/logo.svg" alt="logo">
+            </h1>
+            <!--
+
+                Next, add a nav
+
+                Inside the nav add an unordered list with 5 list items, where each list item has a link inside it. e.g.:
+                    <li>
+                        <a href=""></a>
+                    </li>
+                
+                The links must contain the following (exactly as written) text:
+
+                Programs & Courses
+                Admission
+                Student Services
+                Research
+                About BCIT
+            -->
+
+            <ul>
+                <li>
+                    <a href="">Programs & Courses</a>
+                </li>
+                <li>
+                    <a href="">Admission</a>
+                </li>
+                <li>
+                    <a href="">Student Services</a>
+                </li>
+                <li>
+                    <a href="">Research</a>
+                </li>
+                <li>
+                    <a href="">About BCIT</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- 
+
+            Inside the main element, add two <section> elements
+
+            The first section must have the id 'big-info', and the second section must have id 'welcome'
+
+            BIG INFO
+            ........
+            The big-info section should have only one element as its direct child, a div with class 'overlay'
+
+            Inside the 'overlay' div, add the following elements:
+            
+                1. an h1 with the following text:
+                    Big Info returns Feb 21 from 4-7pm
+
+                2. a paragraph with the following text:
+                    Join us at our largest program expo and enter to win $1000 tuition prize
+
+                3. a button element (<button>) with the following text:
+                    Register now   
+            
+            WELCOME
+            .......
+            The welcome section should contain only one element, an h1 with the following text: Welcome to BCIT
+
+        -->
+        
+        <section id="big-info">
+            <div class="overlay">
+                <h1>Big Info returns Feb 21 <br> from 4-7pm</h1>
+                <p>Join us at our largest program expo and enter to win $1000 tuition prize</p>
+                <button>Register now</button>
+            </div>
+        </section>
+        <section id="welcome">
+            <h1>Welcome to BCIT</h1>
+        </section>
+        <!--
+
+            Once all the markup above has been added, validate your HTML here:
+                https://validator.w3.org/#validate_by_input
+
+            and add all necessary styles to index.css to match the provided solution.
+
+            Once your styles are complete, zip up your files as firstname-lastname-evaluation1.zip 
+            (where firstname and lastname are your actual first and last names) and submit it to the Learning Hub.
+            The zip file should include the html, css and the images.
+
+        -->
+    </main>
+</body>
+</html>

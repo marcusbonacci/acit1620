@@ -1,0 +1,170 @@
+/*
+    ** IMPORTANT NOTE **
+
+    Styles do not have to match the provided solution exactly - try to get it as close as possible, paying attention to the requirements noted below.
+*/
+
+
+
+/*
+    Begin by creating five variables representing BCIT's brand colors
+
+    The variables can be named whatever you like, but the values must be:
+        #003c71                     (dark blue)
+        #296cf6                     (blue)
+        rgb(0 37 85 / 0.8)          (transparent blue)
+        #ffffff                     (white)
+        #fff400                     (yellow)
+
+    * NOTE: anywhere a color is required in your rules below, you MUST use the CSS variable - no hard-coded colors are allowed
+*/
+
+@property --dark-blue {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #003c71;
+}
+
+@property --blue {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #296cf6 ;
+}
+
+@property --t-blue {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: rgb(0 37 85 / 0.8) ;
+}
+
+@property --white {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #ffffff;
+}
+
+@property --yellow {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #fff400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Menubar */
+
+header {
+    background-color: var(--white);
+    width: 100%;
+}
+
+.menubar {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: right;
+    /* padding: 2rem; */
+}
+
+.menubar ul {
+    display: flex;
+}
+
+.menubar li {
+    display: inline;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.menubar li:hover {
+    color: var(--dark-blue);
+    background-color: var(--yellow);
+    transition: 500ms linear;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem
+}
+
+.header .logo {
+    width: 64px;
+    height: 54px;
+}
+
+.header ul li {
+    display: inline;
+    padding-inline: 1rem;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: bold;
+    border-bottom: var(--white);
+}
+
+.header a:hover {
+    transition: .2s linear;
+    border-bottom: 2px solid var(--yellow);
+    color: var(--blue);
+}
+
+/* Big info */
+
+#big-info {
+    background-image: url(images/bcit-big-info.png);
+    height: 800px;
+}
+
+.overlay {
+    position: absolute;
+    color: var(--white);
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.overlay h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 300px;
+}
+
+.overlay p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.overlay button {
+    border: 1px solid var(--white);
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--white);
+    padding: 1rem;
+    padding-block: 1.25rem;
+    padding-right: 10rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.overlay button:hover {
+    transition: 200ms ease-in;
+    background-color: var(--t-blue);
+}
+
+/* Welcome Styles */
+
+#welcome h1 {
+    color: var(--dark-blue);
+    font-size: 34px;
+    padding-inline: 4rem;
+    padding-block: 6rem;
+}
