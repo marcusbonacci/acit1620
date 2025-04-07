@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Colors */
+    --color-blue-400: rgb(14, 158, 236);
+    --color-blue-500: rgba(19, 131, 192, 1);
+    --color-gray: rgba(18, 18, 18, 0.845);
+    --transparent-50: rgba(0, 0, 0, .5);
+    --transparent-90: rgba(0, 0, 0, .9);
+    --black-90: rgb(15, 15, 15);
+    --black-70: rgb(24, 24, 24);
+
+    /* Fonts */
+    --font-family: "Poppins";
+
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--black-90)
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: [full-start] 100px [content-start] 1fr [content-end] 100px [full-end];
+}
+
+.content-grid > * {
+    grid-column: content;
+}
+
+/* Utility */
+
+/* Components */
+.card {
+
+}
+
+.card .title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card .subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: grey;
+    margin-bottom: .75rem;
+}
+
+/* Hero */
+
+#hero {
+    grid-column: full;
+    background-image: 
+        linear-gradient(
+            var(--transparent-50), var(--transparent-50), var(--transparent-50)), 
+            url("./assets/images/skepp.jpg")
+        ;
+    background-size: 100%;
+    background-position: 50%;
+    image-rendering: -webkit-optimize-contrast;
+    mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+}
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 65px;
+    width: 100%;
+    padding-inline: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+
+    color: white;
+    background-color: var(--color-gray);
+}
+
+nav h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+    gap: 1.25rem;
+}
+
+nav a {
+    color: white;
+    transition: 50ms linear;
+}
+
+nav a:hover {
+    color: var(--color-blue-400);
+}
+
+#hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 300px;
+}
+
+#hero .search {
+    display: flex;
+    gap: 1rem;
+}
+
+#hero .search input {
+    background-color: var(--color-gray);
+    font-size: 24px;
+    border: none;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    color: white;
+    border-radius: 1rem;
+    outline: 2px solid transparent;
+    height: 50px;
+}
+
+#hero .search input:focus {
+    transition: 100ms linear;
+    outline: 2px solid var(--color-blue-400)
+}
+
+#hero button {
+    background-color: var(--color-blue-500);
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    padding-inline: 2rem;
+    padding-block: .5rem;
+    color: white;
+    border-radius: 1rem;
+    height: 50px;
+}
+
+#hero button:hover {
+    transition: 50ms linear;
+    background-color: var(--color-blue-400);
+}
+
+/* Info */
+
+#info {
+    /* background-color: red; */
+    background-color: var(--black-90);
+    color: white;
+    padding-block: 100px;
+    z-index: 3;
+}
+
+#info .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+#info .card {
+    width: 30%;
+}
+
+/* Store */
+
+#store {
+    display: flex;
+    grid-column: full;
+    padding-left: 100px;
+    background-color: var(--black-70);
+    background-image: 
+    linear-gradient(
+        var(--transparent-50), var(--transparent-50), var(--transparent-50)), 
+        url("./assets/images/swamp-malad5.jpg")
+    ;
+    background-size: 100%;
+    background-position: 50%;
+    image-rendering: -webkit-optimize-contrast;
+    mask-image: linear-gradient(to top, #000 80%, transparent 100%);
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+#store .sidebar {
+    width: 30%;
+
+    background-color: var(--transparent-50);
+    padding-inline: 1rem;
+    padding-block: .5rem;
+}

@@ -1,0 +1,42 @@
+.grid-content {
+    display: grid;
+    grid-template-columns: [full-start] 100px [content-start] 1fr [content-end] 100px [full-end];
+}
+
+.grid-content > section {
+    grid-column: content;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    padding-inline: 100px;
+    height: 75px;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+nav li {
+    list-style: none;
+}
+
+section {
+    height: 400px;
+}
+
+section:nth-child(even) {
+    background-color: red;
+    z-index: 2;
+}
+
+section:nth-child(odd) {
+    background-color: blue;
+}

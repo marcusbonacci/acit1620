@@ -1,0 +1,47 @@
+@import url("_fonts.css");
+@import url("_reset.css");
+
+/* Components */
+@import url("_navbar.css");
+@import url("_footer.css");
+
+@property --primary-color {
+    initial-value: #38aaf1;
+    inherits: false;
+    syntax: "<color>";
+}
+
+* {
+    /* Font Sizes */
+    --font-xs: 0.5rem;
+    --font-s: 0.875rem;
+    --font-m: 1rem;
+    --font-l: 1.125rem;
+    --font-xl: 1.25rem;
+    --font-xxl: 1.5rem;
+
+    /* Spacing */
+    --gap-xs: 0.128em;
+    --gap-s: 0.272em;
+    --gap-m: 0.618em;
+    --gap-l: 1em;
+    --gap-xl: 1.618em;
+    --gap-xxl: 2.618em;
+    
+    /* Fonts */
+    font-family: "Custom", sans-serif;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-auto-rows: minmax(100px, auto); */
+    /* grid-gap: 10px; */
+}
+
+.hero {
+    grid-column: 1 / 13;
+    height: 200px;
+    background-color: lightgray;
+    margin-bottom: var(--gap-xxl);
+}

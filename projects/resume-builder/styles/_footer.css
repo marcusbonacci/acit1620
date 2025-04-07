@@ -1,0 +1,39 @@
+.footer {
+    grid-column: 1 / 13;
+
+    padding: var(--gap-xl);
+    padding-block: var(--gap-l);
+
+    background-color: lightgray;
+}
+
+.footer .content {
+    display: flex;
+    justify-content: center;
+    gap: var(--gap-xxl);
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .title {
+    font-size: var(--font-l);
+    font-weight: 500;
+    margin-bottom: var(--gap-s);
+}
+
+.footer li {
+    font-size: var(--font-s);
+}
+
+.footer li a {
+    /* color: rgb(33, 33, 33); */
+    font-weight: 400;
+}
+
+.footer li a:hover {
+    color: red;
+}
