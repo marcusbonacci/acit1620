@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Picker Palette</title>
+  <link rel="stylesheet" href="Lab6_styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Color Picker Palette</h1>
+
+    <div class="color-box" id="colorBox">Click a color below 👇</div>
+
+    <div id="colorButtons" class="button-container">
+      <button class="color-btn" style="background-color: red;"></button>
+      <button class="color-btn" style="background-color: green;"></button>
+      <button class="color-btn" style="background-color: blue;"></button>
+      <button class="color-btn" style="background-color: yellow;"></button>
+    </div>
+
+    <form id="addColorForm">
+      <input type="text" id="colorInput" placeholder="Enter a color (e.g. pink or #FF5733)" />
+      <button type="submit">Add Color</button>
+    </form>
+  </div>
+
+  <script src="Lab6_script.js"></script>
+</body>
+</html>
